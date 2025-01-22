@@ -8,9 +8,14 @@
 
 body {
     font-family: 'Times New Roman', Times, serif;
+    background-color: #F7F7F7;
 }
 
 header {
+    background-color: #F7F7F7;
+}
+
+main {
     background-color: #F7F7F7;
 }
 
@@ -87,6 +92,10 @@ nav ul li a {
 
 .a4 {
     color: orangered;
+}
+
+.a5 {
+    display: none;
 }
 
 .active,
@@ -218,12 +227,12 @@ div img {
 }
 
 .div1 {
-    border: none;
+    border: 1px solid red;
     gap: 10px;
     position: relative;
     height: 70vh;
     border-radius: 10px;
-    background: linear-gradient(hsl(198, 65%, 45%) 4%, #fabebe 80%);
+    background: linear-gradient(hsl(198, 65%, 45%) 4%, #fabebe 30%);
 }
 
 .img1,
@@ -281,22 +290,20 @@ img {
 
 .div2 {
     border: 1px solid red;
-    border: none;
     gap: 10px;
     position: relative;
     height: 70vh;
     border-radius: 10px;
-    background: linear-gradient(#A44AA0 4%, hsl(192, 48%, 92%) 80%);
+    background: linear-gradient(#A44AA0 4%, hsl(0, 22%, 90%) 80%);
 }
 
 .div3 {
     border: 1px solid red;
-    border: none;
     gap: 10px;
     position: relative;
     height: 70vh;
     border-radius: 10px;
-    background: linear-gradient(#DEF5FF 4%, #680303 80%);
+    background: linear-gradient(#DEF5FF 4%, #cfc2c2 80%);
 }
 
 .less-then {
@@ -329,11 +336,14 @@ img {
     margin-left: auto;
     background-repeat: no-repeat;
     margin-bottom: 7em;
+    margin-top: 33px;
 }
 
 .our-img {
-    width: 19em;
+    width: 30em;
     height: 30vh;
+    position: relative;
+    top: -28px;
     border-radius: 10px;
     margin-right: 14em;
 }
@@ -341,6 +351,23 @@ img {
 .bbb {
     text-align: center;
     margin-top: 3em;
+    font-size: 43px;
+}
+
+.our1 {
+    width: 30em;
+    background-color: white;
+    border-radius: 4px;
+    border-bottom: 5px;
+    gap: 10px;
+}
+
+.s,
+.u,
+.m,
+.ai {
+    background-color: white;
+    border-radius: 5px;
 }
 
 .our1,
@@ -352,6 +379,8 @@ h2 {
 
 .our-img1 {
     height: 20vh;
+    position: relative;
+    bottom: 28px;
 }
 
 .story {
@@ -380,7 +409,7 @@ h2 {
     background-color: aqua;
     color: rgb(7, 6, 6);
     position: relative;
-    top: -16px;
+    top: -39px;
 }
 
 .btnbe {
@@ -392,7 +421,11 @@ h2 {
     border-radius: 8px;
     color: rgb(2, 1, 1);
     position: relative;
-    top: -16px;
+    top: -39px;
+}
+
+.ourh {
+    margin-bottom: 40px;
 }
 
 
@@ -494,15 +527,17 @@ h2 {
     .checkbtn {
         display: block;
     }
-    ul {
+    ul,
+    .contact-div {
         position: fixed;
-        width: 100%;
+        width: 50%;
         height: 100vh;
-        background: #2c3e50;
+        background: #1c5b9a;
         top: 80px;
         left: -100%;
         text-align: center;
         transition: all .4s;
+        z-index: 1;
     }
     nav ul li {
         display: block;
@@ -523,6 +558,11 @@ h2 {
 }
 
 @media (max-width:600px) {
+    .a5 {
+        display: flex;
+        border: 1px solid red;
+        background-color: orange;
+    }
     .btn {
         display: none;
     }
@@ -580,7 +620,7 @@ h2 {
         right: 12px;
     }
     .footer {
-        height: 150vh;
+        height: 130vh;
     }
     .education {
         flex-direction: column;
@@ -592,17 +632,16 @@ h2 {
     .footer1 {
         flex-direction: column;
         position: relative;
-        bottom: 3em;
+        top: 3em;
     }
     .fp12 {
         position: relative;
-        right: 39px;
+        right: 35px;
         font-size: 23px;
         color: #2c3e50;
     }
     .nn {
         position: relative;
-        right: 20px;
     }
     .fh1 {
         position: relative;
@@ -620,7 +659,7 @@ h2 {
     }
     .fsp {
         position: relative;
-        right: 4.8em;
+        right: 4.3em;
         top: 1em;
         font-weight: bold;
         font-size: 27px;
@@ -628,13 +667,13 @@ h2 {
     }
     .fh11 {
         position: relative;
-        right: 3.6em;
+        right: 3.3em;
         margin-top: 3em;
         color: white;
     }
     .footer-img {
         position: relative;
-        right: 7em;
+        right: 6em;
         width: 44px;
         height: 3em;
     }
