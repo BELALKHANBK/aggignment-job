@@ -147,6 +147,8 @@ div img {
 
 .banner {
     margin-left: 7em;
+    max-width: 1040px;
+    margin: 0 auto;
 }
 
 .banner-s p {
@@ -168,7 +170,7 @@ div img {
 
 .banner-img {
     height: 25em;
-    margin-left: 5em;
+    margin-left: 3em;
 }
 
 .btnbn {
@@ -473,8 +475,11 @@ h2 {
 }
 
 .nn {
-    width: 60px;
-    height: 14vh;
+    width: 50px;
+    height: 10vh;
+    position: relative;
+    top: -16px;
+    right: 15px;
 }
 
 .education1 {
@@ -483,8 +488,8 @@ h2 {
 }
 
 .footer-img {
-    width: 100px;
-    height: 20vh;
+    width: 80px;
+    height: 10vh;
 }
 
 .mm {
@@ -589,7 +594,7 @@ h2 {
     }
     .banner-img {
         position: relative;
-        right: 4.5em;
+        right: 1.4em;
         margin-bottom: 50px;
         width: 26em;
         height: 80vh;
